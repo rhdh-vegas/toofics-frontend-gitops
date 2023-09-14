@@ -1,0 +1,15 @@
+app:
+  name: toofics-poi-map-app
+  namespace: toofics
+  cluster: .apps.rosa-bvg5j.wov7.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-vegas/toofics-frontend
+  org: rhdh-vegas
+  name: toofics-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: toofics/poi-map-app
+  tag: latest
